@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Site Web</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <script>
+        function toggleAddressTooltip() {
+            var tooltip = document.getElementById('addressTooltip');
+            if (tooltip.style.display === 'block') {
+                tooltip.style.display = 'none';
+            } else {
+                tooltip.style.display = 'block';
+            }
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            var addressLink = document.getElementById('addressLink');
+            addressLink.addEventListener('click', toggleAddressTooltip);
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <header class="header">
+            <ul>
+                <!-- Liens vers les différentes sections -->
+                <li><a href="#accueil">ACCUEIL</a></li>
+                <li><a href="#services">SERVICE</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#a-propos">À PROPOS DE NOUS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li class="address-menu">
+                    <a href="#" id="addressLink"> 📭ADRESSE</a>
+                    <div id="addressTooltip" class="tooltip">
+                        Rue Maadan Q.l Bernoussi,<br>
+                        2éme Etage Appt.6 <br>
+                        CASABLANCA , MAROC <br> <br>
+                        ☎ <h3>Tél : 0522673972</h3> <br><br>
+                        ☎<h3> Fax : 0522664479</h3><br>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </nav>
+
+    <section id="accueil" class="section">
+        <div class="title">
+            <h1>ACHRAF CLIM</h1>
+        </div>
+
+        <section class="presentation">
+            <div class="main">
+                <h2>Bienvenue chez ACHRAF CLIM S.A.R.L <br> Plomberie - Chauffage - Climatisation et Travaux Divers</h2>
+                <p>Nous sommes une entreprise spécialisée dans la plomberie, le chauffage, la climatisation et les travaux divers.</p>
+                <p>Notre équipe d'experts s'engage à fournir des solutions efficaces et durables dans ces domaines, tant pour nos clients résidentiels que commerciaux.</p>
+                <p>Nous sommes dédiés à vous offrir un service de qualité supérieure, une expertise technique de pointe et une satisfaction client optimale.</p>
+                <p>Que vous envisagiez une nouvelle installation, une mise à niveau de votre système actuel ou une assistance rapide en cas de problème, nous sommes là pour répondre à vos besoins.</p>
+                <p>Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons vous aider dans vos projets de plomberie, chauffage, climatisation ou autres travaux.</p>
+            </div>
+        </section>
+    </section>
+
+    <div class="buttons">
+        <a href="https://youtu.be/mvOi9_jQApM?si=WDrPEEpn95BM6v0c" class="btn">VOIR LA VIDÉO</a>
+        <a href="https://search.google.com/local/reviews?placeid=ChIJEcvcDYfLpw0Rj-3BTeSnIVs&q=Chauffage,+Bouznika,+Chaouia-Ouardigha,+Morocco&authuser=0&hl=fr&gl=MA" class="btn">AVIS DE CLIENT</a>
+        <a href="https://www.google.com/maps/place/ACHRAF+CLIM+S.A.R.L./@33.6292003,-7.505071999999999,14z/data=!4m8!1m2!2m1!1sACHRAF+CLIM+S.A.R.L.!3m4!1s0xda7cb870ddccb11:0x5b21a7e44dc1ed8f!8m2!3d33.6292003!4d-7.505071999999999" class="btn">LIEN📍</a>
+        <a href="#services" class="btn">NOS SERVICES</a>
+    </div>
+
+    <section id="services">
+        <h1>👷🏻👷🏻‍♂Nos Services</h1> <br> 
+        <section id="plomberie">
+            <h2>Plomberie</h2>
+            <img src="banner-plombier.jpg" alt="Plomberie">
+            <p>Installation, réparation et entretien de systèmes de plomberie pour garantir un fonctionnement optimal et sans soucis.</p>
+        </section>
+
+        <section id="chauffage">
+            <h2>Chauffage</h2>
+            <img src="th.jpeg" alt="Chauffage"class="small-image">
+            <p>Solutions de chauffage efficaces et économiques pour un confort optimal tout au long de l'année.</p>
+        </section>
+
+        <section id="climatisation">
+            <h2>Climatisation</h2>
+            <img src="climatisation.jpg" alt="Climatisation" class="small-image">
+            <p>Installation et maintenance de systèmes de climatisation pour un environnement intérieur agréable et sain.</p>
+        </section>
+
+        <section id="travaux-divers">
+            <h2>Travaux Divers</h2>
+            <img src="engagement-7-orly.jpg" alt="Travaux Divers"class="small-image">
+            <p>Une gamme variée de services pour répondre à tous vos besoins en matière de travaux et d'aménagement.</p>
+        </section>
+    </section>
+    <br>
+    <br>
+
+    <section id="blog"><br>
+        <h1>Blog*</h1><br>
+        <article class="blog-post">
+            <h3> les Conseils pour Entretenir votre Système de Climatisation</h3><br>
+           
+            <a href="https://youtu.be/0KOfXwK98ic" class="VOIR LA VIEDIO"><h1>VOIR LA VIEDIO</a></h1><br>
+            <p>La climatisation est essentielle pour maintenir un environnement intérieur confortable, surtout pendant les mois chauds. Voici cinq conseils pour assurer le bon fonctionnement de votre système de climatisation:</p>
+            <ul>
+               <h1> <li>1.Nettoyez ou remplacez régulièrement les filtres à air.
+                
+                </li><br>
+
+                <li>2.Vérifiez et nettoyez les bobines de l'évaporateur et du condenseur.</li><br>
+                <li>3.Assurez-vous que les zones autour des unités extérieures sont dégagées et exemptes de débris.</li><br>
+                <li>4.Vérifiez les niveaux de réfrigérant et faites appel à un professionnel si nécessaire.</li><br>
+                <li>5.Planifiez des entretiens réguliers avec un technicien qualifié.</li></h1>
+            </ul><br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        
+            
+            <p>En suivant ces conseils, vous pouvez prolonger la durée de vie de votre système de climatisation et améliorer son efficacité.</p>
+        </article>
+        <article class="blog-post"><br>
+            <br>
+            <h1>Pourquoi Choisir ACHRAF CLIM pour Vos Besoins en Plomberie❓</h1>
+            <p>Chez ACHRAF CLIM, nous sommes fiers de notre expertise en plomberie. Voici quelques raisons pour lesquelles vous devriez nous choisir pour vos besoins en plomberie:</p>
+            <ul>
+                <li>Techniciens qualifiés et expérimentés.</li>
+                
+                <li>Utilisation de matériaux et d'équipements de haute qualité.</li>
+                <li>Service rapide et fiable.</li>
+                <li>Solutions personnalisées pour répondre à vos besoins spécifiques.</li>
+                <li>Engagement envers la satisfaction du client.</li>
+            </ul>
+            <p>Contactez-nous dès aujourd'hui pour découvrir comment nous pouvons vous aider avec vos projets de plomberie.</p>
+        </article>
+        <article class="blog-post"><br>
+            <h1>Les Dernières Innovations en Chauffage dans notre sociéte</h1><br>
+
+            <p>Le secteur du chauffage a connu de nombreuses innovations ces dernières années. Voici quelques-unes des dernières tendances:</p>
+            <ul>
+                <br>
+                <br>
+                <br>
+  <h1><li>Chauffage par le sol pour un confort optimal.<br>
+    <img src="Chauffage11.jpg" alt="Filtres à air">
+                </li><br>
+
+  
+
+  <li>Systèmes de chauffage intelligents contrôlables via des applications mobiles.</li><br>
+  <img src="chauffage12.jpg" alt="Filtres à air">
+                </li><br>
+                
+                  
+<li>Pompes à chaleur à haute efficacité énergétique.</li><br>
+<img src="Chauffage13.jpg" alt="Filtres à air">
+                </li><br>
+              
+<li>Radiateurs design et modernes.</li></h1>
+<img src="Radiateurs 15.jpeg" alt="Filtres à air">
+                </li><br>
+               
+            </ul>
+            <p>Chez ACHRAF CLIM, nous nous tenons au courant des dernières innovations pour vous offrir les meilleures solutions de chauffage. Contactez-nous pour en savoir plus.</p><br>
+            <br>
+        
+        </article>
+    </section>
+
+    <section id="a-propos"><br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+       
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+    
+
+    
+        <br>
+        <br>
+        <h1>************À Propos de Nous************</h1><br>
+        <br>
+        <div class="about-us">
+            <h1>Notre Histoire</h1>
+            <p>Fondée en 2008, ACHRAF CLIM S.A.R.L a évolué pour devenir un leader dans les secteurs de la plomberie, du chauffage et de la climatisation au Maroc. Nous avons bâti notre réputation sur la qualité de notre service, notre expertise technique et notre engagement envers la satisfaction du client.</p>
+
+        <h1>Notre Mission</h1>
+        <p>Notre mission est de fournir des solutions innovantes et durables en plomberie, chauffage et climatisation, tout en garantissant la satisfaction de nos clients grâce à un service de haute qualité et une expertise technique inégalée.</p>
+
+        <h1>Notre Équipe</h1>
+        <p>Notre équipe est composée de techniciens qualifiés et expérimentés, dévoués à répondre à vos besoins et à vous offrir les meilleures solutions possibles. Nous investissons continuellement dans la formation de notre personnel pour nous assurer qu'ils sont au courant des dernières technologies et techniques dans notre domaine.</p>
+
+        <h1>Nos Valeurs</h1>
+        <ul>
+            <li>Qualité : Nous nous engageons à fournir des services de la plus haute qualité.</li><br>
+            <li>Intégrité : Nous agissons avec honnêteté et transparence dans toutes nos interactions.</li><br>
+            <li>Innovation : Nous nous efforçons de rester à la pointe de la technologie et des meilleures pratiques.</li><br>
+            <li>Satisfaction du client : Nous plaçons les besoins de nos clients au centre de tout ce que nous faisons.</li><br>
+        </ul><br>
+        <br>
+        <br>
+        <br>
+    </div>
+</section>
+<br>
+<br>
+
+
+
+
+
+
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Pour toute demande d'information ou pour planifier un service, n'hésitez pas à nous contacter :</p>
+        <ul>
+            <li>☎Téléphone : <a href="tel:+212522673972">0522673972</a></li>
+            <li>☎Fax : <a href="tel:+212522664479">0522664479</a></li>
+            <li>📭Email : <a href="mailto:achrafclimmaroc@gmail.com">achrafclimmaroc@gmail.com</a></li>
+        </ul>
+        <p>Ou visitez notre établissement à l'adresse suivante :</p>
+        <address>
+            📍 Rue Maadan Q.l Bernoussi,<br>
+            2ème Etage Appt.6<br>
+            CASABLANCA, MAROC
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ACHRAF CLIM S.A.R.L. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
